@@ -5,7 +5,7 @@ interface Props {
   task: task;
   //Inorder to call the completeTask function inside of the button we need to pass this as props
   //Add the function as type
-  completeTask(taskNameToDelete: string): void;
+  completeTask(_id: string): void;
 }
 
 const TodoTask = ({ task, completeTask }: Props) => {
@@ -17,7 +17,8 @@ const TodoTask = ({ task, completeTask }: Props) => {
       </div>
       <button
         onClick={() => {
-          completeTask(task.taskName);
+          console.log(task);
+          completeTask(task._id);
         }}
       >
         Completed
