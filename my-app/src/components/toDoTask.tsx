@@ -6,7 +6,7 @@ interface Props {
   //Inorder to call the completeTask function inside of the button we need to pass this as props
   //Add the function as type  
   completeTask(_id: string): void;
-}
+}  
 
 const TodoTask = ({ task, completeTask }: Props) => {
   return (
