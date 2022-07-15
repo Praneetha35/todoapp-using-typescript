@@ -2,7 +2,7 @@ import React, { FC, ChangeEvent, useState, useEffect } from "react";
 import "./App.css";
 import TodoTask from "./components/toDoTask";
 import { task } from "./interfaces";
-
+  
 const App: FC = () => {
   const [task, setTask] = useState<string>("");
   const [deadline, setDealine] = useState<number>(0);
