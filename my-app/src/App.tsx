@@ -6,7 +6,7 @@ import { task } from "./interfaces";
 const App: FC = () => {
   const [task, setTask] = useState<string>("");
   const [deadline, setDealine] = useState<number>(0);
-  const [todoList, setTodoList] = useState<task[]>(
+  const [todoList, setTodoList] = useState<task[]>(  
     JSON.parse(localStorage.getItem("list") ?? "[]")
   );
 
