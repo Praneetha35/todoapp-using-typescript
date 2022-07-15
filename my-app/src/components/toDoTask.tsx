@@ -2,7 +2,7 @@ import React from "react";
 import { task } from "../interfaces";
 
 interface Props { 
-  task: task;
+  task: task;          
   //Inorder to call the completeTask function inside of the button we need to pass this as props
   //Add the function as type  
   completeTask(_id: string): void;
